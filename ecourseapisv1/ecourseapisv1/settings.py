@@ -42,8 +42,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'courses.apps.CoursesConfig',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    'rest_framework',
+    'drf_yasg'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS':
+    'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 2
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
