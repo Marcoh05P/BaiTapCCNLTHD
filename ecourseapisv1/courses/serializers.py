@@ -10,3 +10,8 @@ class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
         fields = ['id', 'subject', 'created_date', 'category']
+
+class LessonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Course
+        fields = ['id', 'subject', 'created_date']
